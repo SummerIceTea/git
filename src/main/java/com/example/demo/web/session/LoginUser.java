@@ -1,4 +1,4 @@
-package com.example.demo.session;
+package com.example.demo.web.session;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;

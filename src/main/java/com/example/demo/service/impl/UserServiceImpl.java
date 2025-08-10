@@ -16,14 +16,14 @@ public class UserServiceImpl implements UserService {
         this.userMapper = userMapper;
     }
 
-    //↑このServiceはUserMapperが必要です。外から渡してね。そしてそれをこのクラスの中で使うために保存しておきます。という意味
+    // ↑このServiceはUserMapperが必要です。外から渡してね。そしてそれをこのクラスの中で使うために保存しておきます。という意味
 
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     @Override
-    public User login(String loginId, String password){
+    public User login(String loginId, String password) {
         User user = userMapper.findByLoginId(loginId);
 
-        if(user == null || !user.getPassword().equals(password)){
+        if (user == null || !user.getPassword().equals(password)) {
             throw new AuthenticationException("認証に失敗しました");
         }
 

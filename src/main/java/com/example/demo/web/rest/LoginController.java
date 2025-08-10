@@ -1,4 +1,4 @@
-package com.example.demo.rest;
+package com.example.demo.web.rest;
 
 import java.net.URI;
 
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.example.demo.persistence.entity.User;
-import com.example.demo.request.LoginRequest;
-import com.example.demo.response.LoginResponse;
 import com.example.demo.service.UserService;
-import com.example.demo.session.LoginUser;
+import com.example.demo.web.request.LoginRequest;
+import com.example.demo.web.response.LoginResponse;
+import com.example.demo.web.session.LoginUser;
 
 
 @Controller

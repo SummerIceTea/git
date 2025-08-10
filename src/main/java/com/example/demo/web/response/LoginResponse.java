@@ -1,4 +1,4 @@
-package com.example.demo.response;
+package com.example.demo.web.response;
 
 public class LoginResponse {
     private Integer id;
